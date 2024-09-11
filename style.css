@@ -18,41 +18,50 @@ body {
     grid-template-rows: 50px 1fr 50px;
     grid-gap: 10px;
     padding: 10px;
+    grid-template-areas: 
+    ". . . h h h h h h h h h"
+    "m m m c c c c c c c c c"
+    "s s s st st st ct ct ct ct ct ct"
+    "f f f f f f f f f f f f"
+    
+    
+    ;
 }
 
 .header {
     background-color: #ff6b6b;
-    grid-column: 1/12;
+    grid-area: h;
 }
 
 .menu {
     background-color: #6bff6b;
-
+grid-area: m;
+grid-row: 1/3;
 }
 
 .content {
     background-color: #6b6bff;
-    grid-column: 2/12;
+    grid-area: c;
 }
 
 .sidebar {
     background-color: #6b6bff;
-    grid-column: 1/4;
+    grid-area: s;
 }
 
 .subcontent {
     background-color: #6b6bff;
-    grid-column: 4/5;
+    grid-area: st;
 }
 .contact {
     background-color: #6b6bff;
-    grid-column: 5/12;
+    grid-area: ct;
 }
 
 
 .footer {
     background-color: #ffa06b;
-    grid-column: 1/12;
+    grid-area: f;
 }
 
 .grid-item {
