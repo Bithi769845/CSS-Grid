@@ -14,54 +14,62 @@ body {
 .grid-container {
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(12, 1f);
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ 
     grid-gap: 10px;
     padding: 10px;
-    grid-template-areas: 
-    ". . . h h h h h h h h h"
-    "m m m c c c c c c c c c"
-    "s s s st st st ct ct ct ct ct ct"
-    "f f f f f f f f f f f f"
-    
-    
-    ;
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-rows: 500px;
 }
 
-.header {
+.item1 {
     background-color: #ff6b6b;
-    grid-area: h;
+   
 }
 
-.menu {
+.item2 {
     background-color: #6bff6b;
-grid-area: m;
-grid-row: 1/3;
+
 }
 
-.content {
+.item3 {
     background-color: #6b6bff;
-    grid-area: c;
+    
 }
 
-.sidebar {
-    background-color: #6b6bff;
-    grid-area: s;
+.item4 {
+    background-color: #02021a;
+    
 }
 
-.subcontent {
-    background-color: #6b6bff;
-    grid-area: st;
+.item5 {
+    background-color: #79306d;
+   
 }
-.contact {
-    background-color: #6b6bff;
-    grid-area: ct;
+.item6{
+    background-color: #962f40;
+    
 }
 
 
-.footer {
+.item7 {
     background-color: #ffa06b;
-    grid-area: f;
+  
+}
+
+.item8 {
+    background-color: #6bdcff;
+   
+}
+
+.item9 {
+    background-color: #6bff84;
+   
+}
+
+.item10 {
+    background-color: #d6c7be;
+    
 }
 
 .grid-item {
